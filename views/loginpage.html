@@ -31,7 +31,7 @@
 </body>
 <script>
     function encryptpassword(){
-        // 비밀번호 단방향 암호화
+        // sha256 이용 
         let encrypted=CryptoJS.SHA256(CryptoJS.SHA256($('#inputpassword').val()).toString()).toString()
         $('#password').val(encrypted)
     }
