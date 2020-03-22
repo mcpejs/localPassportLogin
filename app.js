@@ -34,5 +34,4 @@ app.use('/api', apiRouter)
 let indexRouter = require('./routes/index')
 app.use('/', indexRouter)
 
-
 app.listen(3000)
